@@ -58,7 +58,7 @@ class SearchableSpinnerDialog : DialogFragment(), SearchView.OnQueryTextListener
     private fun setView(rootView: View?) {
         if (rootView == null) return
 
-        listAdapter = ArrayAdapter(activity, android.R.layout.simple_spinner_dropdown_item, items)
+        listAdapter = ArrayAdapter(activity, R.layout.textview_list, items)
         mListView = rootView.listView
         mListView?.adapter = listAdapter
         mListView?.isTextFilterEnabled = true
