@@ -27,7 +27,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 
 
-class SearchableSpinner : Spinner, View.OnTouchListener, OnSearchableItemClick<Any?> {
+class SearchableSpinner : androidx.appcompat.widget.AppCompatSpinner, View.OnTouchListener, OnSearchableItemClick<Any?> {
 
     private lateinit var searchDialog: SearchableSpinnerDialog
     private val mContext: Context
